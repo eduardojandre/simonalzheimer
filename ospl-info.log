@@ -1,0 +1,235 @@
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:28:07 Hora oficial do Brasil 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 612121390 from [1,2147483647]
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <10712>
+Thread      : spliced 13368
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/The OpenSplice domain service/u_domain.c/659/0/1541197687.049042400/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:28:07 Hora oficial do Brasil 2018
+Description : Service cmsoap disabled
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <10712>
+Thread      : spliced 13368
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/OpenSplice domain service/sr_componentInfo.c/447/0/1541197687.049862600/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:28:07 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <10712>
+Thread      : spliced 13368
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541197687.051574200/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:28:07 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <10712>
+Thread      : ddsi2 13616
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541197687.068283300/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:30:46 Hora oficial do Brasil 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1828632955 from [1,2147483647]
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <10312>
+Thread      : spliced 11440
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/The OpenSplice domain service/u_domain.c/659/0/1541197846.964888200/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:30:46 Hora oficial do Brasil 2018
+Description : Service cmsoap disabled
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <10312>
+Thread      : spliced 11440
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/OpenSplice domain service/sr_componentInfo.c/447/0/1541197846.965628700/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:30:46 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <10312>
+Thread      : spliced 11440
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541197846.967287000/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:30:46 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <10312>
+Thread      : ddsi2 5260
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541197846.984461700/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:31:06 Hora oficial do Brasil 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1161100635 from [1,2147483647]
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <14968>
+Thread      : spliced 19392
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/The OpenSplice domain service/u_domain.c/659/0/1541197866.669643600/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:31:06 Hora oficial do Brasil 2018
+Description : Service cmsoap disabled
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <14968>
+Thread      : spliced 19392
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/OpenSplice domain service/sr_componentInfo.c/447/0/1541197866.670542400/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:31:06 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <14968>
+Thread      : spliced 19392
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541197866.672629600/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:31:06 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <14968>
+Thread      : ddsi2 14972
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541197866.689874300/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:37:08 Hora oficial do Brasil 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1204504897 from [1,2147483647]
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <16556>
+Thread      : spliced 18764
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/The OpenSplice domain service/u_domain.c/659/0/1541198228.434474800/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:37:08 Hora oficial do Brasil 2018
+Description : Service cmsoap disabled
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <16556>
+Thread      : spliced 18764
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/OpenSplice domain service/sr_componentInfo.c/447/0/1541198228.447039900/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:37:08 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <16556>
+Thread      : spliced 18764
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541198228.448649300/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:37:08 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <16556>
+Thread      : ddsi2 8608
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541198228.495436000/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:40:08 Hora oficial do Brasil 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1609276735 from [1,2147483647]
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <20208>
+Thread      : spliced 20292
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/The OpenSplice domain service/u_domain.c/659/0/1541198408.468724100/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:40:08 Hora oficial do Brasil 2018
+Description : Service cmsoap disabled
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <20208>
+Thread      : spliced 20292
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/OpenSplice domain service/sr_componentInfo.c/447/0/1541198408.469772500/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:40:08 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <20208>
+Thread      : spliced 20292
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541198408.472272900/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 02 19:40:08 Hora oficial do Brasil 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <20208>
+Thread      : ddsi2 20336
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/v_serviceChangeState/v_service.c/295/0/1541198408.491240200/0
