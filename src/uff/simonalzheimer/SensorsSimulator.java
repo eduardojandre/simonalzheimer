@@ -11,6 +11,7 @@ import java.util.List;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
@@ -86,6 +87,14 @@ public class SensorsSimulator implements NodeConnectionListener  {
 		JPanel framePanel=new JPanel();
 		JPanel actionPanel=new JPanel();
 		JPanel sensorsPanel=new JPanel();
+		JPanel locationPanel=new JPanel();
+		JLabel locationLabel=new JLabel("Room: ");
+		JComboBox<String> locationCombo=new JComboBox<String>(new String[]{"bedroom","Kitchen","livingroom","bathroom"});
+		locationLabel.setLabelFor(locationCombo);
+		locationPanel.add(locationLabel);
+		locationPanel.add(locationCombo);
+		
+		
 		JButton confirmChanges=new JButton("Confirm");
 		confirmChanges.addActionListener(new ActionListener() {
 			@Override
@@ -97,6 +106,7 @@ public class SensorsSimulator implements NodeConnectionListener  {
 		tvIsOn=new JCheckBox("Tv is on?");
 		fridgeIsOpen=new JCheckBox("Fridge is on?");
 		sensorsPanel.setLayout(new BoxLayout(sensorsPanel,BoxLayout.Y_AXIS));
+		sensorsPanel.add(locationPanel);
 		sensorsPanel.add(tvIsOn);	
 		sensorsPanel.add(fridgeIsOpen);
 		actionList = new JList<String>(actions);
