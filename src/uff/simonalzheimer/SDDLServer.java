@@ -23,7 +23,7 @@ public class SDDLServer implements UDIDataReaderListener<ApplicationObject> {
     /*The SDDL Layer : DDS Abstraction */
     private static SddlLayer sddlLayer;
     
-    private static List<Client> caregivers=new ArrayList<Client>();
+    private static ContextProcessor msgProcessor;
     
 	public SDDLServer () 
 	{
@@ -43,6 +43,8 @@ public class SDDLServer implements UDIDataReaderListener<ApplicationObject> {
 	    Object sendTopic = sddlLayer.createTopic(PrivateMessage.class, PrivateMessage.class.getSimpleName());
 	    sddlLayer.createDataReader(this, receiveTopic);
 	    sddlLayer.createDataWriter(sendTopic);
+	    msgProcessor=new ContextProcessor(sddlLayer);
+	    
 	}
 		
 	public static void main(String[] args) {
@@ -56,45 +58,7 @@ public class SDDLServer implements UDIDataReaderListener<ApplicationObject> {
 		if (topicSample instanceof Message) {
 			msg = (Message) topicSample;
 			Serializable rawData = Serialization.fromJavaByteStream(msg.getContent());
-			treatDataReceival(msg, rawData);
-		}
-	}
-	private void registerClient(Message msg, Serializable rawData) {
-		Registration regMsg = (Registration) rawData;
-		
-		Client regi=new Client();
-		regi.setGatewayId(msg.getGatewayId());
-		regi.setSenderId(msg.getSenderId());
-		
-		if(regMsg.getType()==ClientType.Caregiver)
-			caregivers.add(regi);
-		
-		System.out.print(regi.toString());
-		
-		Alert aler=new Alert();
-		aler.setMessage("Registrado");
-		
-		regi.sendMessage(sddlLayer, aler);
-	}
-	/* Private Methods */
-	/**
-	 * This method is the one you should customize so that the server is capable of 
-	 * handling different types of objects.
-	 * 
-	 * @param msg
-	 * @param rawData
-	 */
-	private void treatDataReceival(Message msg, Serializable rawData) {
-
-		if(rawData instanceof Registration) {
-			registerClient(msg,rawData);
-		}else {
-			if (rawData instanceof String) {
-				System.out.println("\nMensagem: " + (String) rawData);	
-			}else {
-				System.out.println("Server are not ready for this message.");
-			}
-			
+			msgProcessor.treatDataReceival(msg, rawData);
 		}
 	}
 

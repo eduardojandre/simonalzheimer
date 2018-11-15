@@ -27,27 +27,13 @@ import lac.cnclib.sddl.message.Message;
 import uff.simonalzheimer.messages.State;
 
 
-public class SensorsSimulator implements NodeConnectionListener  {
+public class SensorsSimulator extends Simulator  {
 	public static JList<String> actionList;
 	public static String[] actions = {"sleeping", "watchingTv", "cooking", "reading"};
 	public static JCheckBox tvIsOn;
 	public static JCheckBox fridgeIsOpen;
 	public static State state;
 	
-	private static String gatewayIP = "127.0.0.1";
-	private static int gatewayPort = 5500;
-	private MrUdpNodeConnection connection;
-	
-	public SensorsSimulator() {
-		InetSocketAddress address = new InetSocketAddress(gatewayIP, gatewayPort);
-		try {
-			connection = new MrUdpNodeConnection();
-			connection.addNodeConnectionListener(this);
-			connection.connect(address);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 	
 	public static synchronized void setState() {
 		state.isFridgeOpen=fridgeIsOpen.isSelected();
@@ -57,17 +43,6 @@ public class SensorsSimulator implements NodeConnectionListener  {
 	public static synchronized State getState() {
 		return state;
 	}
-	public void sendMsg(String msg) {
-		ApplicationMessage message = new ApplicationMessage();
-		
-		message.setContentObject(msg);
-		
-		try {
-			connection.sendMessage(message);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 	
 	public static void main(String[] args) throws Exception {
 		System.out.println("--Starting sensors simulator--");
@@ -75,11 +50,11 @@ public class SensorsSimulator implements NodeConnectionListener  {
 		state=new State();
 		setFrame();
 		SensorsSimulator c=new SensorsSimulator();
-		Gson gson = new Gson();
+	
 		while(true) {
 			
-			c.sendMsg(gson.toJson(state));
-			Thread.sleep(5000);
+			c.sendMsg(state);
+			Thread.sleep(10000);
 		}
 	}
 	public static void setFrame() {
@@ -122,36 +97,6 @@ public class SensorsSimulator implements NodeConnectionListener  {
 
 	    frame.pack();
 	    frame.setVisible(true);
-
 	}
-	@Override
-	public void connected(NodeConnection arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void disconnected(NodeConnection arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void internalException(NodeConnection arg0, Exception arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void newMessageReceived(NodeConnection arg0, Message arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void reconnected(NodeConnection arg0, SocketAddress arg1, boolean arg2, boolean arg3) {
-		// TODO Auto-generated method stub
-		
-	}
-	@Override
-	public void unsentMessages(NodeConnection arg0, List<Message> arg1) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }

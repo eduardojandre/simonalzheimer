@@ -11,6 +11,7 @@ import lac.cnet.sddl.udi.core.SddlLayer;
 public class Client{
 	private UUID gatewayId;
 	private UUID nodeId;
+	private SddlLayer sddlLayer;
 	public UUID getGatewayId() {
 		return gatewayId;
 	}
@@ -27,7 +28,7 @@ public class Client{
 	{
 		return "Sender Id: " +nodeId.toString() + " Gateway Id: "+ gatewayId; 
 	}
-	public void sendMessage(SddlLayer sddlLayer,Serializable content) {
+	public void sendMessage(Serializable content) {
 		
 		ApplicationMessage appMsg = new ApplicationMessage();
 		appMsg.setContentObject(content);
@@ -38,6 +39,12 @@ public class Client{
 		privateMessage.setMessage(Serialization.toProtocolMessage(appMsg));
 
 		sddlLayer.writeTopic(PrivateMessage.class.getSimpleName(), privateMessage);
+	}
+	public SddlLayer getSddlLayer() {
+		return sddlLayer;
+	}
+	public void setSddlLayer(SddlLayer sddlLayer) {
+		this.sddlLayer = sddlLayer;
 	}
 
 }
