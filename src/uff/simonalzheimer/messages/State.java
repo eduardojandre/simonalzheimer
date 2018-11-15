@@ -1,4 +1,4 @@
-package uff.simonalzheimer;
+package uff.simonalzheimer.messages;
 
 import java.io.Serializable;
 import java.util.List;

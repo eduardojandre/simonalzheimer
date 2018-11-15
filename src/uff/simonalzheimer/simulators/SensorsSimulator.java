@@ -1,4 +1,4 @@
-package uff.simonalzheimer;
+package uff.simonalzheimer.simulators;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,6 +24,7 @@ import lac.cnclib.net.NodeConnectionListener;
 import lac.cnclib.net.mrudp.MrUdpNodeConnection;
 import lac.cnclib.sddl.message.ApplicationMessage;
 import lac.cnclib.sddl.message.Message;
+import uff.simonalzheimer.messages.State;
 
 
 public class SensorsSimulator implements NodeConnectionListener  {
