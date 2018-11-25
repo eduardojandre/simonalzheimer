@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 		SDDLServer.main(args);
-		Thread.sleep(100);
+		Thread.sleep(1000);
 		SensorsSimulator.main(args);
 	}
 }

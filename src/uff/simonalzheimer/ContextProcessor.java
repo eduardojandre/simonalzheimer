@@ -1,40 +1,78 @@
 package uff.simonalzheimer;
 
 import java.io.Serializable;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
 import lac.cnet.sddl.objects.Message;
 import lac.cnet.sddl.udi.core.SddlLayer;
 import uff.simonalzheimer.messages.Alert;
-import uff.simonalzheimer.messages.ContextRule;
+import uff.simonalzheimer.messages.Condition;
 import uff.simonalzheimer.messages.Registration;
 import uff.simonalzheimer.messages.State;
 import uff.simonalzheimer.messages.Registration.ClientType;
+import uff.simonalzheimer.messages.Routine;
 
 public class ContextProcessor {
 	public ContextProcessor(SddlLayer sddlLayer) {
 		caregivers=new ArrayList<Client>();
-		rules=new ArrayList<ContextRule>();
+		routines=new ArrayList<Routine>();
 		this.sddlLayer=sddlLayer;
-		rules.add(new ContextRule());
 		state=new State();
 	}
 	private State state;
 	private SddlLayer sddlLayer;
 	private List<Client> caregivers;
-	private List<ContextRule> rules;
+	private List<Routine> routines;
+	public String getKeyValue(State object, String name) {
+		Field field;
+		try {
+			name=name.replace(" ", "");
+			name=name.substring(0, 1).toLowerCase() + name.substring(1);
+			field = object.getClass().getDeclaredField(name);
+			field.setAccessible(true);
+			return (String) field.get(object);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "";
+		}    
+	}
 	
 	public void runRules() {
 		State s=getState();
-		for (ContextRule r : rules) {
-			r.runRule(s, caregivers);
+		for (Routine r : routines) {
+			if(r.isEnabled()) {
+				boolean satisfied=true;
+				for (Condition<String,String> c : r.getConditions()){
+					String key=(String)c.getKey();
+					String value=getKeyValue(s, key);
+					satisfied= satisfied && (
+							(value.equals(c.getValue()) && !c.getNotValueBool()) || 
+							(!value.equals(c.getValue()) && c.getNotValueBool())
+							);
+				}
+				if(satisfied) {
+					for (String a: r.getActions()) {
+						System.out.println("Action: "+ a);
+						if(a.contains("Caregiver")) {
+							for(Client c: caregivers) {
+								Alert al=new Alert();
+								al.setMessage(r.getName());
+								c.sendMessage(al);
+							}
+						}
+					}	
+				}
+			}
 		}
 	}
 	public  synchronized void setState(State s) {
-		state.isFridgeOpen=s.isFridgeOpen;
-		state.isTvOn=s.isTvOn;
-		state.actions=s.actions;
+		state.activity=s.activity;
+		state.bloodPreassure=s.bloodPreassure;
+		state.bodyTemperature=s.bodyTemperature;
+		state.heartBeat=s.heartBeat;
+		state.location=s.location;
 	}
 	public synchronized State getState() {
 		return state;
@@ -70,10 +108,16 @@ public class ContextProcessor {
 				System.out.println("\nMensagem: " + (String) rawData);	
 			}else{
 				if (rawData instanceof State) {
+					System.out.println(rawData);
 					setState((State)rawData);
 					runRules();
 				}else {
-					System.out.println("Server are not ready for this message.");
+					if(rawData instanceof ArrayList<?>) {
+						routines=(ArrayList<Routine>) rawData;
+						
+					}else {
+						System.out.println("Server are not ready for this message.");
+					}
 				}
 			}
 		}

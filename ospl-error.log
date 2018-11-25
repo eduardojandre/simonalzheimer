@@ -1,0 +1,104 @@
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:15 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171515.494012100/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:16 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171516.195811300/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:16 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171516.273759500/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:16 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171516.306374200/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:16 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171516.373864400/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:16 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171516.822695600/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:16 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171516.923360800/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:17 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171517.278197500/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:17 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171517.477873100/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:17 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171517.678375300/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:17 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171517.878322400/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:18 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171518.479249500/0
+========================================================================================
+Report      : ERROR
+Date        : Sun Nov 25 16:45:18 Horário brasileiro de verão 2018
+Description : ddsi_udp_conn_write failed with error code 10051
+Node        : LAPTOP-743SHBQG
+Process     : javaw.exe <15708>
+Thread      : tev 1384
+Internals   : 6.7.180404OSS/de8c6f4f/de8c6f4f/ddsi2/ddsi_udp.c/144/0/1543171518.783301500/0
