@@ -52,10 +52,6 @@ public class ContextProcessor {
 		
 		System.out.println(regi.toString());
 		
-		Alert aler=new Alert();
-		aler.setMessage("Registrado");
-		
-		regi.sendMessage( aler);
 	}
 	
 	/**

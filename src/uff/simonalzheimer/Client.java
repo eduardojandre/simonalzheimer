@@ -36,7 +36,9 @@ public class Client{
 		PrivateMessage privateMessage = new PrivateMessage();
 		privateMessage.setGatewayId(gatewayId);
 		privateMessage.setNodeId(nodeId);
+		privateMessage.setMessageId(1);
 		privateMessage.setMessage(Serialization.toProtocolMessage(appMsg));
+	//	privateMessage.setMessage(Serialization.toProtocolMessage("teste"));
 
 		sddlLayer.writeTopic(PrivateMessage.class.getSimpleName(), privateMessage);
 	}
